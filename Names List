@@ -1,0 +1,16 @@
+
+end = False
+
+names= []
+for x in range (0,10):
+    aname=input("Enter a name:")
+    names.append(aname)
+while not end:
+    print("At any point type End with no spaces to finish the search")
+    search = input ("Enter a name you want to find")
+    if search == ("End"):
+        end = True
+    elif search in names:
+        print (search, "name was found")
+    elif search not in names:
+        print (search,"Name was not found")
